@@ -14,7 +14,7 @@ YYYY-MM-DD
 
 def main():
     movie_id = 0;
-    for x in range(100200, 100210, 1):
+    for x in range(222000, 222002, 1):
         url = "http://www.omdbapi.com/?i=tt0" + str(x)
         movie_id += 1
         info = str(urllib.urlopen(url).read())
@@ -24,13 +24,13 @@ def main():
         desc = data['Plot']
         release = data['Released']
 
-        if (len(release) > 5):
+        if (release != 'N/A'):
             release = formatDate(data['Released'])
 
         runtime = data['Runtime']
-        if (len(runtime) > 0):
+        if (runtime != 'N/A'):
             runtime = data['Runtime'].split()[0]
-        
+
         cert = data['Rated']
         rating = data['imdbRating']
         # rating = float(ratin)
