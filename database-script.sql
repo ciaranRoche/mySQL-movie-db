@@ -1,5 +1,5 @@
 drop database sequelmovie;
-creat database sequelmovie;
+create database sequelmovie;
 use sequelmovie;
 
 create table movie(
@@ -17,7 +17,7 @@ create table trailer(
 	trailerID int(5) not null,
 	trailerLength int(2),
 	trailerURL varchar(150),
-	id_movie
+	id_movie,
 	constraint trailer_pk primary key (trailerID),
 	constraint movie_fk foreign key (id_movie) references movie (movieID)
 )engine innodb;
@@ -34,7 +34,7 @@ create table movie_studio(
 create table studio(
 	studioID int(5) not null,
 	studioName varchar(50) not null,
-	studioAddress varchar(200)
+	studioAddress varchar(200),
 	constraint studio_fk primary key (studioID)
 )engine innodb;
 
@@ -66,7 +66,7 @@ create table role(
 
 create table person(
 	personID int(5) not null,
-	personFirstName varchar(50) not null
+	personFirstName varchar(50) not null,
 	personLastName varchar(50),
 	personNationality varchar(50),
 	constraint person_pk primary key (personID)
@@ -110,7 +110,7 @@ create table song_artiste(
 create table artiste(
 	artisteID int(5) not null,
 	artisteName varchar(50) not null,
-	artisteNationality varchar(50)
+	artisteNationality varchar(50),
 	constraint artiste_pk primary key (artisteID)
 )engine innodb;
 
@@ -126,7 +126,7 @@ create table song_group(
 create table group(
 	groupID int(5) not null,
 	groupName varchar(25) not null,
-	constraint group_pk primary key (groupID),
+	constraint group_pk primary key (groupID)
 ) engine innodb;
 
 create table artiste_group(
