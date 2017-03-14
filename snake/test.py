@@ -10,31 +10,31 @@ insert into tbl_client values (123, 'NAME NAME', 'ADDR', 'EMAIL' ,
 YYYY-MM-DD
 '''
 
-
+# Movie ID and Movie title not null
 
 def main():
     movie_id = 0;
-    for x in range(222000, 222002, 1):
+    for x in range(816692, 816695, 1):
         url = "http://www.omdbapi.com/?i=tt0" + str(x)
         movie_id += 1
         info = str(urllib.urlopen(url).read())
         data = json.loads(info)
 
-        title = data['Title']
-        desc = data['Plot']
-        release = data['Released']
-
-        if (release != 'N/A'):
+        if (data['Response'] == "True"):
+          title = data['Title']
+          desc = data['Plot']
+          release = data['Released']
+          if (release != 'N/A'):
             release = formatDate(data['Released'])
 
-        runtime = data['Runtime']
-        if (runtime != 'N/A'):
+          runtime = data['Runtime']
+          if (runtime != 'N/A'):
             runtime = data['Runtime'].split()[0]
 
-        cert = data['Rated']
-        rating = data['imdbRating']
+          cert = data['Rated']
+          rating = data['imdbRating']
         # rating = float(ratin)
-        print('insert into movie values ({0}, {7}{1}{7}, {7}{2}{7}, {3}, {4}, {7}{5}{7}, {6});'.format(movie_id, title, desc, release, runtime, cert, rating, "'"))
+          print('insert into movie values ({0}, {7}{1}{7}, {7}{2}{7}, {3}, {4}, {7}{5}{7}, {6});'.format(movie_id, title, desc, release, runtime, cert, rating, "'"))
     
 
 def formatDate(date):
