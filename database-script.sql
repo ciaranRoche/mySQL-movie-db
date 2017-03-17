@@ -120,7 +120,7 @@ create table band(
     constraint band_pk primary key (bandID)
 ) engine innodb;
 
-create table song_group(
+create table song_band(
     song_groupID int(5) not null,
     song_songID int(5) not null,
     b_bandID int(5) not null,
@@ -129,7 +129,7 @@ create table song_group(
     constraint song_group_fk_band foreign key (b_bandID) references band (bandID)
 )engine innodb;
 
-create table artiste_group(
+create table artiste_band(
     artiste_groupID int(5) not null,
     a_artisteID int(5) not null,
     b_bandID int(5) not null,
