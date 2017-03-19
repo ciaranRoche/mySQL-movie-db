@@ -131,6 +131,7 @@ create table song_band(
 
 create table artiste_band(
     artiste_groupID int(5) not null,
+    role varchar(50),
     a_artisteID int(5) not null,
     b_bandID int(5) not null,
     constraint artiste_group_pk primary key (artiste_groupID),
