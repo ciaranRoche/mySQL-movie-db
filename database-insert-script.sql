@@ -6,6 +6,9 @@ insert into movie values (0002, 'The Godfather', 'The aging patriarch of an orga
 insert into movie values (0003, 'The Dark Knight','The menace known as the joker wreaks havoc on Gotham City', '2008-7-18', 152, '12', '4.5');
 insert into movie values (0004, 'American Psycho', 'A wealthy New York investment banking executive hides his alternate psychopathic ego', '2000-4-14', 102, '18', '4');
 insert into movie values (0005, 'Pulp Fiction', 'The lives of two mod hit men, a boxer, a gangster`s wife are all inter twinned', '1994-10-14', 154, '18', 4);
+insert into movie values (0006, 'The Matrix', 'A hacker learns from mysterious rebels about the true nature of his reality', '1999-3-31', 136, '18', 4);
+insert into movie values (0007, 'Logan', 'In a near future, a weary Logan cares for an ailing professor x', '2017-3-3', 135, '18', 5);
+insert into movie values (0008, 'The Prestige', 'Two stage magicians engage in competitive one-upmanship in an attempt to create the ultimate stage illusion', '2006-10-20', 135, '12', 5);
 
 /* trailer inserts */
 insert into trailer values (0001, '2' , 'https://www.youtube.com/watch?v=6hB3S9bIaco', 0001);
@@ -13,6 +16,9 @@ insert into trailer values (0002, '2' , 'https://www.youtube.com/watch?v=sY1S349
 insert into trailer values (0003, '3', 'https://www.youtube.com/watch?v=EXeTwQWrcwY', 0003);
 insert into trailer values (0004, '3', 'https://www.youtube.com/watch?v=2GIsExb5jJU', 0004);
 insert into trailer values (0005, '2', 'https://www.youtube.com/watch?v=s7EdQ4FqbhY', 0005);
+insert into trailer values (0006, '3', 'https://www.youtube.com/watch?v=m8e-FF8MsqU', 0006);
+insert into trailer values (0007, '2', 'https://www.youtube.com/watch?v=DekuSxJgpbY', 0007);
+insert into trailer values (0008, '3', 'https://www.youtube.com/watch?v=o4gHCmTQDVI', 0008);
 
 /* studio inserts */
 insert into studio values (0001, 'Castle Rock Studios', 'America');
@@ -20,6 +26,8 @@ insert into studio values (0002, 'Paramount Pictures', 'America');
 insert into studio values (0003, 'Warner Bros', 'America');
 insert into studio values (0004, 'Lionsgate Studios', 'America');
 insert into studio values (0005, 'Miramax Films', 'America');
+insert into studio values (0006, 'Road Show Entertainment', 'Australia');
+insert into studio values (0007, 'Marvel Studios', 'America');
 
 
 /* movie-studio inserts */
@@ -28,12 +36,18 @@ insert into movie_studio values (0002, 0002, 0002);
 insert into movie_studio values (0003, 0003, 0003);
 insert into movie_studio values (0004, 0004, 0004);
 insert into movie_studio values (0005, 0005, 0005);
+insert into movie_studio values (0006, 0006, 0003);
+insert into movie_studio values (0007, 0006, 0006);
+insert into movie_studio values (0008, 0007, 0007);
+insert into movie_studio values (0009, 0008, 0003);
 
 /* genre inserts */
 insert into genre values (0001, 'Drama', 'Drama film is a genre that relies on the emotional and relational development of realistic characters');
 insert into genre values (0002, 'Crime', 'Films that focus on crime');
 insert into genre values (0003, 'Action', 'Action film is a film genre in which the protagonist or protagonists end up in a series of challenges that typically include violence, extended fighting, physical feats, and frantic chases.');
 insert into genre values (0004, 'Comic Book', 'Film adaptions from comic books and graphic novels');
+insert into genre values (0005, 'Sci-Fi', 'Films of speculative fiction, typically dealing with imaginative concepts such as futuristic science and tech');
+insert into genre values (0006, 'Mystery', 'Is a type of fiction in which a detective, or other professional, solves a crime or series of crimes');
 
 /* movie-genre inserts */
 insert into movie_genre values (0001, 0001, 0001);
@@ -46,6 +60,13 @@ insert into movie_genre values (0007, 0004, 0002);
 insert into movie_genre values (0008, 0004, 0001);
 insert into movie_genre values (0009, 0005, 0001);
 insert into movie_genre values (0010, 0005, 0002);
+insert into movie_genre values (0011, 0006, 0003);
+insert into movie_genre values (0012, 0006, 0005);
+insert into movie_genre values (0013, 0007, 0004);
+insert into movie_genre values (0014, 0007, 0003);
+insert into movie_genre values (0015, 0007, 0005);
+insert into movie_genre values (0016, 0008, 0001);
+insert into movie_genre values (0017, 0008, 0006);
 
 /* person inserts */
 insert into person values (0001, 'Morgan', 'Freeman', 'American');
@@ -64,6 +85,12 @@ insert into person values (0013, 'Justin', 'Theroux', null);
 insert into person values (0014, 'John', 'Travolta', 'American');
 insert into person values (0015, 'Tim', 'Roth', 'American');
 insert into person values (0016, 'Quentin', 'Tarantino', 'American');
+insert into person values (0017, 'Keanu', 'Reeves', 'American');
+insert into person values (0018, 'Laurence', 'Fishburne', null);
+insert into person values (0019, 'Lana', 'Wachowski', 'American');
+insert into person values (0020, 'Lilly', 'Wachowski', null);
+insert into person values (0021, 'Hugh', 'Jackman', 'Australian');
+insert into person values (0022, 'Paddy', 'Stewart', 'American');
 
 /* role inserts */
 insert into role values (0001, 'co-actor', 0001, 0001);
@@ -86,6 +113,17 @@ insert into role values (0017, 'co-actor', 0005, 0015);
 insert into role values (0018, 'co-actor', 0005, 0016);
 insert into role values (0019, 'director', 0005, 0016);
 insert into role values (0020, 'writer', 0005, 0016);
+insert into role values (0021, 'lead actor', 0006, 0017);
+insert into role values (0022, 'co-actor', 0006, 0018);
+insert into role values (0023, 'director', 0006, 0019);
+insert into role values (0024, 'director', 0006, 0020);
+insert into role values (0025, 'writer', 0006, 0019);
+insert into role values (0026, 'writer', 0006, 0020);
+insert into role values (0027, 'lead actor', 0007, 0021);
+insert into role values (0028, 'co-actor', 0007, 0022);
+insert into role values (0029, 'lead actor', 0008, 0021);
+insert into role values (0030, 'co-actor', 0008, 0008);
+insert into role values (0031, 'director', 0008, 0010);
 
 
 /* sound track inserts */
@@ -94,6 +132,10 @@ insert into soundtrack values (0002, 'The Godfather Soundtrack', 6, 0002);
 insert into soundtrack values (0003, 'The Dark Knight', 5, 0003);
 insert into soundtrack values (0004, 'American Psycho: Music from the Controversial movie picture', 10, 0004);
 insert into soundtrack values (0005, 'Music from the Motion Picture Pulp Fiction', 16, 0005);
+insert into soundtrack values (0006, 'The Matrix, Music, Music from the Motion Picture', 13, 0006);
+insert into soundtrack values (0007, 'Logan Music', 16, 0007);
+insert into soundtrack values (0008, 'The Prestige: Original Score', 17, 0008);
+
 
 /* song inserts */
 insert into song values (0001, 'May' , 1 , 'www.youtube.com/may');
@@ -111,6 +153,16 @@ insert into song values (0012, 'You Spin me Round', 2, 'www.youtube.com/youspinm
 insert into song values (0013, 'Jungle Boogie', 3, 'www.youtube.com/jungleboogie');
 insert into song values (0014, 'Son of a Preacher Man', 4, 'www.youtube.com/sonofapreacherman');
 insert into song values (0015, 'Girl, Youll be a Woman Soon', 3, 'www.youtube.com/youllbeawomansoon');
+insert into song values (0016, 'Rock is Dead', 3, 'www.youtube.com/rockisdead');
+insert into song values (0017, 'Mindfields', 5, 'www.youtube.com/mindfields');
+insert into song values (0018, 'Du Hast', 4, 'www.youtube.com/duhast');
+insert into song values (0019, 'Dragula', 4, 'www.youtube.com/dragula');
+insert into song values (0020, 'Make it Bang', 4, 'www.youtube.com/makeitbang');
+insert into song values (0021, 'I got a name', 3, 'www.youtube.com/igotaname');
+insert into song values (0022, 'Are you watching closely', 3, 'www.youtube.com/areyouwatching');
+insert into song values (0023, 'The light field', 2, 'www.youtube.com/thelightfield');
+insert into song values (0024, 'Border Meets Sarah', 4, 'www.youtube.com/bordermeetssarah');
+insert into song values (0025, 'No, not today', 5, 'www.youtube.com/nonottoday');
 
 /* soundtrack-song inserts */
 insert into soundtrack_song values (0001, 0001, 0001);
@@ -128,7 +180,16 @@ insert into soundtrack_song values (0012, 0004, 0012);
 insert into soundtrack_song values (0013, 0005, 0013);
 insert into soundtrack_song values (0014, 0005, 0014);
 insert into soundtrack_song values (0015, 0005, 0015);
-
+insert into soundtrack_song values (0016, 0006, 0016);
+insert into soundtrack_song values (0017, 0006, 0017);
+insert into soundtrack_song values (0018, 0006, 0018);
+insert into soundtrack_song values (0019, 0006, 0019);
+insert into soundtrack_song values (0020, 0007, 0020);
+insert into soundtrack_song values (0021, 0007, 0021);
+insert into soundtrack_song values (0022, 0008, 0022);
+insert into soundtrack_song values (0023, 0008, 0023);
+insert into soundtrack_song values (0024, 0008, 0024);
+insert into soundtrack_song values (0025, 0008, 0025);
 
 /* artiste inserts */
 insert into artiste values (0001, 'Thomas Newman', 'American');
@@ -148,7 +209,18 @@ insert into artiste values (0014, 'Ronald Bell', 'American');
 insert into artiste values (0015, 'George Brown', 'American');
 insert into artiste values (0016, 'Lavell Evans', 'American');
 insert into artiste values (0017, 'Amir Bayyan', 'American');
-
+insert into artiste values (0018, 'Marilyn Manson', 'American');
+insert into artiste values (0019, 'Liam Howlett', 'British');
+insert into artiste values (0020, 'Keith Flint', 'British');
+insert into artiste values (0021, 'Maxim', 'British');
+insert into artiste values (0022, 'Till Lindemann', 'German');
+insert into artiste values (0023, 'Richard Z. Kruspe', 'German');
+insert into artiste values (0024, 'Paul Landers', 'German');
+insert into artiste values (0025, 'Christoph Schneider', null);
+insert into artiste values (0026, 'Rob Zombie', null);
+insert into artiste values (0027, 'Baauer', null);
+insert into artiste values (0028, 'Jim Croce', null);
+insert into artiste values (0029, 'David Julyan', 'American');
 
 /* song-artiste inserts */
 insert into song_artiste values (0001, 0001, 0001);
@@ -164,14 +236,26 @@ insert into song_artiste values (0010, 0010, 0005);
 insert into song_artiste values (0011, 0011, 0006);
 insert into song_artiste values (0012, 0014, 0011);
 insert into song_artiste values (0013, 0015, 0012);
+insert into song_artiste values (0014, 0016, 0018);
+insert into song_artiste values (0015, 0019, 0026);
+insert into song_artiste values (0016, 0020, 0027);
+insert into song_artiste values (0017, 0021, 0028);
+insert into song_artiste values (0018, 0022, 0029);
+insert into song_artiste values (0019, 0023, 0029);
+insert into song_artiste values (0020, 0024, 0029);
+insert into song_artiste values (0021, 0025, 0029);
 
 /* band inserts */
 insert into band values (0001, 'Dope');
 insert into band values (0002, 'Kool and the Gang');
+insert into band values (0003, 'The Prodigy');
+insert into band values (0004, 'Rammstein');
 
 /* song-band inserts */
 insert into song_band values (0001, 0012, 0001);
 insert into song_band values (0002, 0013, 0002);
+insert into song_band values (0003, 0017, 0003);
+insert into song_band values (0004, 0018, 0004);
 
 /* artiste-band inserts */
 insert into artiste_band values (0001, 'lead vocals', 0007, 0001);
@@ -183,3 +267,10 @@ insert into artiste_band values (0006, 'saxophone', 0014, 0002);
 insert into artiste_band values (0007, 'drums', 0015, 0002);
 insert into artiste_band values (0008, 'lead vocals', 0016, 0002);
 insert into artiste_band values (0009, 'guitar', 0017, 0002);
+insert into artiste_band values (0010, 'Keyboards', 0019, 0003);
+insert into artiste_band values (0011, 'dancer', 0020, 0003);
+insert into artiste_band values (0012, 'MC', 0021, 0003);
+insert into artiste_band values (0014, 'lead vocals', 0022, 0004);
+insert into artiste_band values (0015, 'lead guitar', 0023, 0004);
+insert into artiste_band values (0016, 'bass', 0024, 0004);
+insert into artiste_band values (0017, 'drums', 0025, 0005);
