@@ -74,7 +74,7 @@ create table role(
 
 create table soundtrack(
     soundtrackID int(5) not null,
-    soundtrack varchar(50) not null,
+    soundtrack varchar(100) not null,
     soundtrackSize int(2),
     m_movieID int(5) not null,
     constraint soundtrack_pk primary key (soundtrackID),
@@ -83,7 +83,7 @@ create table soundtrack(
 
 create table song(
     songID int(5) not null,
-    songName varchar(25) not null,
+    songName varchar(100) not null,
     songLength int(3),
     songURL varchar(150),
     constraint song_pk primary key (songID)
@@ -91,11 +91,11 @@ create table song(
 
 create table soundtrack_song(
     soundtrack_songID int(5) not null,
-    song_songID int(5) not null,
     soundtrack_soundtrackID int(5) not null,
+    song_songID int(5) not null,
     constraint soundtrack_song_pk primary key (soundtrack_songID),
-    constraint soundtrack_song_fk_song foreign key (song_songID) references song (songID),
-    constraint soundtrack_song_fk_soundtrack foreign key (soundtrack_soundtrackID) references soundtrack (soundtrackID)
+    constraint soundtrack_song_fk_soundtrack foreign key (soundtrack_soundtrackID) references soundtrack (soundtrackID),
+    constraint soundtrack_song_fk_song foreign key (song_songID) references song (songID)
 )engine innodb;
 
 create table artiste(
