@@ -74,7 +74,7 @@ create table role(
 
 create table soundtrack(
     soundtrackID int(5) not null,
-    soundtrack varchar(100) not null,
+    soundtrack varchar(25) not null,
     soundtrackSize int(2),
     m_movieID int(5) not null,
     constraint soundtrack_pk primary key (soundtrackID),
@@ -83,7 +83,7 @@ create table soundtrack(
 
 create table song(
     songID int(5) not null,
-    songName varchar(100) not null,
+    songName varchar(25) not null,
     songLength int(3),
     songURL varchar(150),
     constraint song_pk primary key (songID)
@@ -138,4 +138,11 @@ create table artiste_band(
     constraint artiste_group_fk_artiste foreign key (a_artisteID) references artiste (artisteID),
     constraint artiste_group_fk_band foreign key (b_bandID) references band (bandID)
 )engine innodb;
+
+
+#Altering table here to allow for smooth inserts
+
+alter table soundtrack modify soundtrack varchar(100);
+alter table song modify songName varchar(100);
+
 
