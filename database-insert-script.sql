@@ -9,6 +9,8 @@ insert into movie values (0005, 'Pulp Fiction', 'The lives of two mod hit men, a
 insert into movie values (0006, 'The Matrix', 'A hacker learns from mysterious rebels about the true nature of his reality', '1999-3-31', 136, '18', 4);
 insert into movie values (0007, 'Logan', 'In a near future, a weary Logan cares for an ailing professor x', '2017-3-3', 135, '18', 5);
 insert into movie values (0008, 'The Prestige', 'Two stage magicians engage in competitive one-upmanship in an attempt to create the ultimate stage illusion', '2006-10-20', 135, '12', 5);
+insert into movie values (0009, 'Interstellar', 'A team of explorers travel through a wormhole in space in an attempt to save the human race', '2014-11-7', 169, '12', '5');
+
 
 /* trailer inserts */
 insert into trailer values (0001, '2' , 'https://www.youtube.com/watch?v=6hB3S9bIaco', 0001);
@@ -19,6 +21,8 @@ insert into trailer values (0005, '2', 'https://www.youtube.com/watch?v=s7EdQ4Fq
 insert into trailer values (0006, '3', 'https://www.youtube.com/watch?v=m8e-FF8MsqU', 0006);
 insert into trailer values (0007, '2', 'https://www.youtube.com/watch?v=DekuSxJgpbY', 0007);
 insert into trailer values (0008, '3', 'https://www.youtube.com/watch?v=o4gHCmTQDVI', 0008);
+insert into trailer values (0009, '3', 'https://www.youtube.com/watch?v=zSWdZVtXT7E', 0009);
+
 
 /* studio inserts */
 insert into studio values (0001, 'Castle Rock Studios', 'America');
@@ -40,6 +44,8 @@ insert into movie_studio values (0006, 0006, 0003);
 insert into movie_studio values (0007, 0006, 0006);
 insert into movie_studio values (0008, 0007, 0007);
 insert into movie_studio values (0009, 0008, 0003);
+insert into movie_studio values (0010, 0009, 0003);
+
 
 /* genre inserts */
 insert into genre values (0001, 'Drama', 'Drama film is a genre that relies on the emotional and relational development of realistic characters');
@@ -48,6 +54,7 @@ insert into genre values (0003, 'Action', 'Action film is a film genre in which 
 insert into genre values (0004, 'Comic Book', 'Film adaptions from comic books and graphic novels');
 insert into genre values (0005, 'Sci-Fi', 'Films of speculative fiction, typically dealing with imaginative concepts such as futuristic science and tech');
 insert into genre values (0006, 'Mystery', 'Is a type of fiction in which a detective, or other professional, solves a crime or series of crimes');
+insert into genre values (0007, 'Adventure', 'An adventure is an event or series of events that happens outside the course of the protagonist''s ordinary life, usually accompanied by danger, often by physical action.');
 
 /* movie-genre inserts */
 insert into movie_genre values (0001, 0001, 0001);
@@ -67,6 +74,10 @@ insert into movie_genre values (0014, 0007, 0003);
 insert into movie_genre values (0015, 0007, 0005);
 insert into movie_genre values (0016, 0008, 0001);
 insert into movie_genre values (0017, 0008, 0006);
+insert into movie_genre values (0018, 0009, 0007);
+insert into movie_genre values (0019, 0009, 0001);
+insert into movie_genre values (0020, 0009, 0005);
+
 
 /* person inserts */
 insert into person values (0001, 'Morgan', 'Freeman', 'American');
@@ -91,6 +102,9 @@ insert into person values (0019, 'Lana', 'Wachowski', 'American');
 insert into person values (0020, 'Lilly', 'Wachowski', null);
 insert into person values (0021, 'Hugh', 'Jackman', 'Australian');
 insert into person values (0022, 'Paddy', 'Stewart', 'American');
+insert into person values (0023, 'Matthew', 'McConaughey', 'American');
+insert into person values (0024, 'Ellen', null, 'American');
+
 
 /* role inserts */
 insert into role values (0001, 'co-actor', 0001, 0001);
@@ -124,6 +138,9 @@ insert into role values (0028, 'co-actor', 0007, 0022);
 insert into role values (0029, 'lead actor', 0008, 0021);
 insert into role values (0030, 'co-actor', 0008, 0008);
 insert into role values (0031, 'director', 0008, 0010);
+insert into role values (0032, 'lead actor', 0009, 0023);
+insert into role values (0033, 'co-actor', 0009, 0024);
+insert into role values (0034, 'director', 0009, 0010);
 
 
 /* sound track inserts */
@@ -135,7 +152,7 @@ insert into soundtrack values (0005, 'Music from the Motion Picture Pulp Fiction
 insert into soundtrack values (0006, 'The Matrix, Music, Music from the Motion Picture', 13, 0006);
 insert into soundtrack values (0007, 'Logan Music', 16, 0007);
 insert into soundtrack values (0008, 'The Prestige: Original Score', 17, 0008);
-
+insert into soundtrack values (0009, 'Interstellar Soundtrack', 16, 0009);
 
 /* song inserts */
 insert into song values (0001, 'May' , 1 , 'www.youtube.com/may');
@@ -163,6 +180,7 @@ insert into song values (0022, 'Are you watching closely', 3, 'www.youtube.com/a
 insert into song values (0023, 'The light field', 2, 'www.youtube.com/thelightfield');
 insert into song values (0024, 'Border Meets Sarah', 4, 'www.youtube.com/bordermeetssarah');
 insert into song values (0025, 'No, not today', 5, 'www.youtube.com/nonottoday');
+insert into song values (0026, 'interstellar compilation', 72, 'https://www.youtube.com/watch?v=iBfk37Fa3H0');
 
 /* soundtrack-song inserts */
 insert into soundtrack_song values (0001, 0001, 0001);
@@ -190,6 +208,7 @@ insert into soundtrack_song values (0022, 0008, 0022);
 insert into soundtrack_song values (0023, 0008, 0023);
 insert into soundtrack_song values (0024, 0008, 0024);
 insert into soundtrack_song values (0025, 0008, 0025);
+insert into soundtrack_song values (0026, 0009, 0026);
 
 /* artiste inserts */
 insert into artiste values (0001, 'Thomas Newman', 'American');
@@ -244,6 +263,7 @@ insert into song_artiste values (0018, 0022, 0029);
 insert into song_artiste values (0019, 0023, 0029);
 insert into song_artiste values (0020, 0024, 0029);
 insert into song_artiste values (0021, 0025, 0029);
+insert into song_artiste values (0022, 0026, 0005);
 
 /* band inserts */
 insert into band values (0001, 'Dope');
