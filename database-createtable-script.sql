@@ -13,6 +13,14 @@ create table movie(
     constraint movie_pk primary key (movieID)
 )engine innodb;
 
+create table poster(
+    posterID int(5) not null,
+    posterLink varchar(100),
+    p_movie_id int(5) not null,
+    constraint poster_pk primary key (posterID),
+    constraint poster_fk_movie foreign key (p_movie_id) references movie (movieID)
+)engine innodb;
+
 create table trailer(
     trailerID int(5) not null,
     trailerLength int(2),

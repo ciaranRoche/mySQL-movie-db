@@ -12,6 +12,18 @@ insert into movie values (0008, 'The Prestige', 'Two stage magicians engage in c
 insert into movie values (0009, 'Interstellar', 'A team of explorers travel through a wormhole in space in an attempt to save the human race', '2014-11-7', 169, '12', '5');
 insert into movie values (0010, 'The Wolf of Wall Street', 'Based on the true story of Jordan Belfort', '2013-12-25',  180, '18', 4);
 
+/* poster inserts */
+insert into poster values (0001, null, 0001);
+insert into poster values (0002, null,0002);
+insert into poster values (0003, 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg',0003);
+insert into poster values (0004, 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyMTYwMTI0N15BMl5BanBnXkFtZTgwNTU2NTYxMTE@._V1_SX300.jpg',0004);
+insert into poster values (0005, 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxMTA5OTAzMl5BMl5BanBnXkFtZTgwNjA5MDc3NjE@._V1_SX300.jpg',0005);
+insert into poster values (0006, null ,0006);
+insert into poster values (0007, 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjI1MjkzMjczMV5BMl5BanBnXkFtZTgwNDk4NjYyMTI@._V1_SX300.jpg',0007);
+insert into poster values (0008, 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_SX300.jpg', 0008);
+insert into poster values (0009, 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg', 0009);
+insert into poster values (0010, 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX300.jpg', 0010);
+
 /* trailer inserts */
 insert into trailer values (0001, '2' , 'https://www.youtube.com/watch?v=6hB3S9bIaco', 0001);
 insert into trailer values (0002, '2' , 'https://www.youtube.com/watch?v=sY1S34973zA', 0002);
