@@ -32,6 +32,22 @@ show triggers;
 
 drop trigger before_movie_insert_movieCertificate;
 
+------------------------------------------------------------------------------
+delimiter $$
+create trigger before_movie_insert_movieRating before insert on movie
+for each row
+begin
+	if (new.movieRating < 1) OR (new.movieRating > 5) then
+	signal sqlstate '42000'
+	set message_text = 'Check constraint on movieRating in table movie failed. Outrageous rating my good sir/madame'
+	end if;
+end$$
+delimiter ;
+
+insert into movie values (0010, 'Test Title2', 'The description lol2', '2017-03-22', 100, '13', 9);
+
+
+
 #Update varchar size to allow longer soundtrack and song titles
 
 

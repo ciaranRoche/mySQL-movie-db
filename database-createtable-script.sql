@@ -9,7 +9,7 @@ create table movie(
     movieReleaseDate date,
     movieRuntime int(3) check (movieRuntime > 25),
     movieCertificate varchar(4) check (movieCertificate in ('N/A','PG','12','12A','15','15A','16','18')),
-    movieRating int(1) check (movieRating > 0 and movieRating < 5),
+    movieRating int(1) check (movieRating > 0 and movieRating <= 5),
     constraint movie_pk primary key (movieID)
 )engine innodb;
 
