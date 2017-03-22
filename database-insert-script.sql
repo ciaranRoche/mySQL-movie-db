@@ -202,7 +202,7 @@ insert into song values (0022, 'Are you watching closely', 3, 'www.youtube.com/a
 insert into song values (0023, 'The light field', 2, 'www.youtube.com/thelightfield');
 insert into song values (0024, 'Border Meets Sarah', 4, 'www.youtube.com/bordermeetssarah');
 insert into song values (0025, 'No, not today', 5, 'www.youtube.com/nonottoday');
-insert into song values (0026, 'interstellar compilation', 72, 'https://www.youtube.com/watch?v=iBfk37Fa3H0');
+insert into song values (0026, 'Interstellar compilation', 72, 'https://www.youtube.com/watch?v=iBfk37Fa3H0');
 insert into song values (0027, 'Bang Bang', 4, 'www.youtube.com/bangbang');
 insert into song values (0028, 'Pretty Thing', 3, 'www.youtube.com/prettything');
 insert into song values (0029, 'Smokestack Lightning', 4, 'www.youtube.com/smokestack');
