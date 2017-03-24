@@ -67,6 +67,7 @@ create table person(
     personFirstName varchar(50) not null,
     personLastName varchar(50),
     personNationality varchar(50),
+    personPicture varchar (150),
     constraint person_pk primary key (personID)
 )engine innodb;
 

@@ -95,33 +95,33 @@ insert into movie_genre values (0022, 0010, 0002);
 
 
 /* person inserts */
-insert into person values (0001, 'Morgan', 'Freeman', 'American');
-insert into person values (0002, 'Tim', 'Robbins', 'American');
-insert into person values (0003, 'Frank', 'Darabont', 'American');
-insert into person values (0004, 'Stephen' , 'King' , 'American');
-insert into person values (0005, 'Al', 'Pacino', 'American');
-insert into person values (0006, 'Marlon', 'Brando', 'American');
-insert into person values (0007, 'Francis Ford', 'Coppola', 'Italian');
-insert into person values (0008, 'Christian', 'Bale' , 'American');
-insert into person values (0009, 'Heath', 'Ledger', 'American');
-insert into person values (0010, 'Christopher', 'Nolan', null);
-insert into person values (0011, 'Jonathan', 'Nolan', null);
-insert into person values (0012, 'Mary', 'Harron', null);
-insert into person values (0013, 'Justin', 'Theroux', null);
-insert into person values (0014, 'John', 'Travolta', 'American');
-insert into person values (0015, 'Tim', 'Roth', 'American');
-insert into person values (0016, 'Quentin', 'Tarantino', 'American');
-insert into person values (0017, 'Keanu', 'Reeves', 'American');
-insert into person values (0018, 'Laurence', 'Fishburne', null);
-insert into person values (0019, 'Lana', 'Wachowski', 'American');
-insert into person values (0020, 'Lilly', 'Wachowski', null);
-insert into person values (0021, 'Hugh', 'Jackman', 'Australian');
-insert into person values (0022, 'Paddy', 'Stewart', 'American');
-insert into person values (0023, 'Matthew', 'McConaughey', 'American');
-insert into person values (0024, 'Ellen', null, 'American');
-insert into person values (0025, 'Leonardo', 'DiCaprio', 'American');
-insert into person values (0026, 'Jonah', 'Hill', 'American');
-insert into person values (0027, 'Martin', 'Scorsese', 'American');
+insert into person values (0001, 'Morgan', 'Freeman', 'American', 'http://www.imdb.com/name/nm0000151/mediaviewer/rm3587479040?ref_=nm_ov_ph');
+insert into person values (0002, 'Tim', 'Robbins', 'American', 'http://www.imdb.com/name/nm0000209/mediaviewer/rm3789593344?ref_=nm_ov_ph');
+insert into person values (0003, 'Frank', 'Darabont', 'American', 'http://www.imdb.com/name/nm0001104/mediaviewer/rm3402598144?ref_=nm_ov_ph');
+insert into person values (0004, 'Stephen' , 'King' , 'American', 'http://www.imdb.com/name/nm0000175/mediaviewer/rm2162726912?ref_=nm_ov_ph');
+insert into person values (0005, 'Al', 'Pacino', 'American', 'http://www.imdb.com/name/nm0000199/mediaviewer/rm3894385408?ref_=nm_ov_ph');
+insert into person values (0006, 'Marlon', 'Brando', 'American', 'http://www.imdb.com/name/nm0000008/mediaviewer/rm1238402304?ref_=nm_ov_ph');
+insert into person values (0007, 'Francis Ford', 'Coppola', 'Italian', 'http://www.imdb.com/name/nm0000338/mediaviewer/rm604472576?ref_=nm_ov_ph');
+insert into person values (0008, 'Christian', 'Bale' , 'American', 'http://www.imdb.com/name/nm0000288/mediaviewer/rm3114052352?ref_=nm_ov_ph');
+insert into person values (0009, 'Heath', 'Ledger', 'American', 'http://www.imdb.com/name/nm0005132/mediaviewer/rm1308400384?ref_=nm_ov_ph');
+insert into person values (0010, 'Christopher', 'Nolan', null, 'http://www.imdb.com/name/nm0634240/mediaviewer/rm2047771392?ref_=nm_ov_ph');
+insert into person values (0011, 'Jonathan', 'Nolan', null, 'http://www.imdb.com/name/nm0634300/mediaviewer/rm3593121792?ref_=nm_ov_ph';
+insert into person values (0012, 'Mary', 'Harron', null, 'http://www.imdb.com/name/nm0366004/mediaviewer/rm1540923392?ref_=nm_ov_ph');
+insert into person values (0013, 'Justin', 'Theroux', null, 'http://www.imdb.com/name/nm0857620/mediaviewer/rm605539840?ref_=nm_ov_ph');
+insert into person values (0014, 'John', 'Travolta', 'American', 'http://www.imdb.com/name/nm0000237/mediaviewer/rm3504714496?ref_=nm_ov_ph');
+insert into person values (0015, 'Tim', 'Roth', 'American', null);
+insert into person values (0016, 'Quentin', 'Tarantino', 'American', 'http://www.imdb.com/name/nm0000233/mediaviewer/rm4146963200?ref_=nm_ov_ph');
+insert into person values (0017, 'Keanu', 'Reeves', 'American', 'http://www.imdb.com/name/nm0000206/mediaviewer/rm3751520256?ref_=nm_ov_ph');
+insert into person values (0018, 'Laurence', 'Fishburne', null, 'http://www.imdb.com/name/nm0000401/mediaviewer/rm1925683200?ref_=nm_ov_ph');
+insert into person values (0019, 'Lana', 'Wachowski', 'American', 'http://www.imdb.com/name/nm0905154/mediaviewer/rm3382618368?ref_=nm_ov_ph');
+insert into person values (0020, 'Lilly', 'Wachowski', null, 'http://www.imdb.com/name/nm0905152/mediaviewer/rm1928797184?ref_=nm_ov_ph');
+insert into person values (0021, 'Hugh', 'Jackman', 'Australian', 'http://www.imdb.com/name/nm0413168/mediaviewer/rm772779264?ref_=nm_ov_ph');
+insert into person values (0022, 'Paddy', 'Stewart', 'American', null);
+insert into person values (0023, 'Matthew', 'McConaughey', 'American', 'http://www.imdb.com/name/nm0000190/mediaviewer/rm477213952?ref_=nm_ov_ph');
+insert into person values (0024, 'Ellen', null, 'American', 'http://www.imdb.com/name/nm0000995/mediaviewer/rm577411584?ref_=nm_ov_ph');
+insert into person values (0025, 'Leonardo', 'DiCaprio', 'American', 'http://www.imdb.com/name/nm0000138/mediaviewer/rm487490304?ref_=nm_ov_ph');
+insert into person values (0026, 'Jonah', 'Hill', 'American', 'http://www.imdb.com/name/nm1706767/mediaviewer/rm4139364608?ref_=nm_ov_ph');
+insert into person values (0027, 'Martin', 'Scorsese', 'American', 'http://www.imdb.com/name/nm0000217/mediaviewer/rm1221431040?ref_=nm_ov_ph');
 
 
 /* role inserts */
