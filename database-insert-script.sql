@@ -35,6 +35,12 @@ insert into trailer values (0007, '2', 'https://www.youtube.com/watch?v=DekuSxJg
 insert into trailer values (0008, '3', 'https://www.youtube.com/watch?v=o4gHCmTQDVI', 0008);
 insert into trailer values (0009, '3', 'https://www.youtube.com/watch?v=zSWdZVtXT7E', 0009);
 insert into trailer values (0010, '2', 'https://www.youtube.com/watch?v=iszwuX1AK6A', 0010);
+insert into trailer values (0011, '3', 'https://www.youtube.com/watch?v=vKQi3bBA1y8', 0006);
+insert into trailer values (0012, '2', 'https://www.youtube.com/watch?v=pabEtIERlic', 0010);
+insert into trailer values (0013, '3', 'https://www.youtube.com/watch?v=5DO-nDW43Ik', 0002);
+insert into trailer values (0014, '2', 'https://www.youtube.com/watch?v=ewlwcEBTvcg', 0005);
+insert into trailer values (0015, '2', 'https://www.youtube.com/watch?v=Div0iP65aZo&t=15s', 0007);
+insert into trailer values (0016, '4', 'https://www.youtube.com/watch?v=RH3OxVFvTeg', 0007);
 
 /* studio inserts */
 insert into studio values (0001, 'Castle Rock Studios', 'America');
