@@ -16,18 +16,18 @@ create table movie(
 create table poster(
     posterID int(5) not null,
     posterLink varchar(200) default 'http://www.uidownload.com/files/478/82/442/error-404-page-not-found-icon.jpg',
-    p_movie_id int(5) not null,
+    m_movieID int(5) not null,
     constraint poster_pk primary key (posterID),
-    constraint poster_fk_movie foreign key (p_movie_id) references movie (movieID)
+    constraint poster_fk_movie foreign key (m_movieID) references movie (movieID)
 )engine innodb;
 
 create table trailer(
     trailerID int(5) not null,
     trailerLength int(2),
     trailerURL varchar(150),
-    id_movie int(5) not null,
+    m_movieID int(5) not null,
     constraint trailer_pk primary key (trailerID),
-    constraint trailer_fk_movie foreign key (id_movie) references movie (movieID)
+    constraint trailer_fk_movie foreign key (m_movieID) references movie (movieID)
 )engine innodb;
 
 create table studio(
@@ -65,7 +65,7 @@ create table movie_genre(
 create table person(
     personID int(5) not null,
     personFirstName varchar(50) not null,
-    personLastName varchar(50),
+    personLastName varchar(50) not null,
     personNationality varchar(50),
     personPicture varchar (150),
     constraint person_pk primary key (personID)
@@ -140,7 +140,7 @@ create table song_band(
 
 create table artiste_band(
     artiste_groupID int(5) not null,
-    role varchar(50),
+    bandRole varchar(50),
     a_artisteID int(5) not null,
     b_bandID int(5) not null,
     constraint artiste_group_pk primary key (artiste_groupID),
