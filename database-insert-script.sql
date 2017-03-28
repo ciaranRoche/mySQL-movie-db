@@ -111,7 +111,7 @@ insert into person values (0007, 'Francis Ford', 'Coppola', 'Italian', 'http://w
 insert into person values (0008, 'Christian', 'Bale' , 'American', 'http://www.imdb.com/name/nm0000288/mediaviewer/rm3114052352?ref_=nm_ov_ph');
 insert into person values (0009, 'Heath', 'Ledger', 'American', 'http://www.imdb.com/name/nm0005132/mediaviewer/rm1308400384?ref_=nm_ov_ph');
 insert into person values (0010, 'Christopher', 'Nolan', null, 'http://www.imdb.com/name/nm0634240/mediaviewer/rm2047771392?ref_=nm_ov_ph');
-insert into person values (0011, 'Jonathan', 'Nolan', null, 'http://www.imdb.com/name/nm0634300/mediaviewer/rm3593121792?ref_=nm_ov_ph';
+insert into person values (0011, 'Jonathan', 'Nolan', null, 'http://www.imdb.com/name/nm0634300/mediaviewer/rm3593121792?ref_=nm_ov_ph');
 insert into person values (0012, 'Mary', 'Harron', null, 'http://www.imdb.com/name/nm0366004/mediaviewer/rm1540923392?ref_=nm_ov_ph');
 insert into person values (0013, 'Justin', 'Theroux', null, 'http://www.imdb.com/name/nm0857620/mediaviewer/rm605539840?ref_=nm_ov_ph');
 insert into person values (0014, 'John', 'Travolta', 'American', 'http://www.imdb.com/name/nm0000237/mediaviewer/rm3504714496?ref_=nm_ov_ph');
@@ -241,7 +241,7 @@ insert into soundtrack_song values (0023, 0008, 0023);
 insert into soundtrack_song values (0024, 0008, 0024);
 insert into soundtrack_song values (0025, 0008, 0025);
 insert into soundtrack_song values (0026, 0009, 0026);
-insert into soungtrack_song values (0027, 0010, 0027);
+insert into soundtrack_song values (0027, 0010, 0027);
 insert into soundtrack_song values (0028, 0010, 0028);
 insert into soundtrack_song values (0029, 0010, 0029);
 
@@ -303,8 +303,8 @@ insert into song_artiste values (0020, 0024, 0029);
 insert into song_artiste values (0021, 0025, 0029);
 insert into song_artiste values (0022, 0026, 0005);
 insert into song_artiste values (0023, 0027, 0030);
-insert into song_artiste values (0023, 0028, 0031);
-insert into song_artiste values (0023, 0029, 0032);
+insert into song_artiste values (0024, 0028, 0031);
+insert into song_artiste values (0025, 0029, 0032);
 
 /* band inserts */
 insert into band values (0001, 'Dope');
@@ -334,4 +334,4 @@ insert into artiste_band values (0012, 'MC', 0021, 0003);
 insert into artiste_band values (0014, 'lead vocals', 0022, 0004);
 insert into artiste_band values (0015, 'lead guitar', 0023, 0004);
 insert into artiste_band values (0016, 'bass', 0024, 0004);
-insert into artiste_band values (0017, 'drums', 0025, 0005);
+insert into artiste_band values (0017, 'drums', 0025, 0004);
