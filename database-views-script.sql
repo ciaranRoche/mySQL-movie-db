@@ -20,5 +20,9 @@ create view movie_v_genre as
   from movie, genre, movie_genre
   where movieID = m_movieID and g_genreID = genreID;
 
+create view soundtrack_v_song as
+  select soundtrackName, songName
+  from soundtrack, song, soundtrack_song
+  where soundtrackID = soundtrack_soundtrackID and song_songID = songID;
 
 
