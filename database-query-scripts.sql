@@ -39,7 +39,7 @@ for each row
 begin
 	if (new.movieRating < 1) OR (new.movieRating > 5) then
 	signal sqlstate '42000'
-	set message_text = 'Check constraint on movieRating in table movie failed. Outrageous rating my good sir/madame'
+	set message_text = 'Check constraint on movieRating in table movie failed. Outrageous rating my good sir/madame';
 	end if;
 end$$
 delimiter ;
