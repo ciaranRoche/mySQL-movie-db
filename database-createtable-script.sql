@@ -83,7 +83,7 @@ create table role(
 
 create table soundtrack(
     soundtrackID int(5) not null,
-    soundtrack varchar(100) not null,
+    soundtrackName varchar(100) not null,
     soundtrackSize int(2),
     m_movieID int(5) not null,
     constraint soundtrack_pk primary key (soundtrackID),
