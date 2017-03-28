@@ -1,4 +1,6 @@
-#Violate check constraints using triggers
+-- show triggers;
+
+-- drop trigger before_movie_insert_movieCertificate;
 
 delimiter $$
 create trigger before_movie_insert_movieRuntime before insert on movie
@@ -11,9 +13,7 @@ begin
 end$$
 delimiter ;
 
-insert into movie values (0011, 'What on earth?', 'The check for movieRuntime', '2017-03-14', 15, '18', 4);
 
--------------------------------------------------------------------------------
 delimiter $$
 create trigger before_movie_insert_movieCertificate before insert on movie
 for each row
@@ -25,14 +25,7 @@ begin
 end$$
 delimiter ;
 
-insert into movie values (0010, 'Test Title2', 'The description lol2', '2017-03-22', 100, '13', 4);
 
-
-show triggers;
-
-drop trigger before_movie_insert_movieCertificate;
-
-------------------------------------------------------------------------------
 delimiter $$
 create trigger before_movie_insert_movieRating before insert on movie
 for each row
@@ -44,11 +37,6 @@ begin
 end$$
 delimiter ;
 
-insert into movie values (0010, 'Test Title2', 'The description lol2', '2017-03-22', 100, '13', 9);
-
-
-
-#Update varchar size to allow longer soundtrack and song titles
 
 
 #Views
