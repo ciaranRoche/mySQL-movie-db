@@ -15,7 +15,7 @@ create table movie(
 
 create table poster(
     posterID int(5) not null,
-    posterLink varchar(200),
+    posterLink varchar(200) default 'http://www.uidownload.com/files/478/82/442/error-404-page-not-found-icon.jpg',
     p_movie_id int(5) not null,
     constraint poster_pk primary key (posterID),
     constraint poster_fk_movie foreign key (p_movie_id) references movie (movieID)

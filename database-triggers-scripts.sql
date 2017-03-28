@@ -6,7 +6,7 @@ for each row
 begin
 	if new.movieRuntime <= 25 then
 	signal sqlstate '42000'
-	set message_text = 'Check constraint on movieRuntime in table movie failed. Runtime too short'
+	set message_text = 'Check constraint on movieRuntime in table movie failed. Runtime too short';
 	end if;
 end$$
 delimiter ;
