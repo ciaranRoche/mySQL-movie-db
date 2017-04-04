@@ -116,10 +116,10 @@ create table artiste(
 
 create table song_artiste(
     song_artisteID int(5) not null,
-    song_songID int(5) not null,
+    s_songID int(5) not null,
     a_artisteID int(5) not null,
     constraint song_artiste_pk primary key (song_artisteID),
-    constraint song_artiste_fk_song foreign key (song_songID) references song (songID),
+    constraint song_artiste_fk_song foreign key (s_songID) references song (songID),
     constraint song_artiste_fk_artiste foreign key (a_artisteID) references artiste (artisteID)
 )engine innodb;
 
