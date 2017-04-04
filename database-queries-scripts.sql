@@ -51,6 +51,7 @@ update trailer
 	set trailerURL = ifnull(trailerURL, 'https://youtu.be/dQw4w9WgXcQ');
 
 
+<<<<<<< HEAD
 insert into movie values (0011, 'Alien', 'After a space merchant vessel lands on the source moon and finds one of the crew attacked by a mysterious life-form.', '1979-6-22', 175, '18', '4.5'); 
 
 delete from movie
@@ -64,3 +65,5 @@ change movieDesc moviePlot varchar(150);
 
 
 
+=======
+>>>>>>> 9d1804e69f7996b300f6facb48feba164fcb9762
