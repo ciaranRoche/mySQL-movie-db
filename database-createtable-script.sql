@@ -130,20 +130,20 @@ create table band(
 ) engine innodb;
 
 create table song_band(
-    song_groupID int(5) not null,
+    song_bandID int(5) not null,
     song_songID int(5) not null,
     b_bandID int(5) not null,
-    constraint song_group_pk primary key (song_songID),
-    constraint song_group_fk_song foreign key (song_songID) references song (songID),
-    constraint song_group_fk_band foreign key (b_bandID) references band (bandID)
+    constraint song_band_pk primary key (song_bandID),
+    constraint song_band_fk_song foreign key (song_songID) references song (songID),
+    constraint song_band_fk_band foreign key (b_bandID) references band (bandID)
 )engine innodb;
 
 create table artiste_band(
-    artiste_groupID int(5) not null,
+    artiste_bandID int(5) not null,
     bandRole varchar(50),
     a_artisteID int(5) not null,
     b_bandID int(5) not null,
-    constraint artiste_group_pk primary key (artiste_groupID),
-    constraint artiste_group_fk_artiste foreign key (a_artisteID) references artiste (artisteID),
-    constraint artiste_group_fk_band foreign key (b_bandID) references band (bandID)
+    constraint artiste_band_pk primary key (artiste_bandID),
+    constraint artiste_band_fk_artiste foreign key (a_artisteID) references artiste (artisteID),
+    constraint artiste_band_fk_band foreign key (b_bandID) references band (bandID)
 )engine innodb;
