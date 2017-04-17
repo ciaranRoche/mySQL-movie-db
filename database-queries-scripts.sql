@@ -25,7 +25,7 @@ select * from movie_v_actors; #View
 
 select songName
 from song, artiste, song_artiste
-where artisteID = a_artisteID and song_songID = songID and artisteName = 'Joe Bloggs';
+where artisteID = a_artisteID and songID = s_songID and artisteName = 'Joe Bloggs';
 
 select movieTitle, songName, soundtrackName, artisteName
 from movie, song, soundtrack, artiste, soundtrack_song, song_artiste
