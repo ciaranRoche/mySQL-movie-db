@@ -25,9 +25,9 @@ create table trailer(
     trailerID int(5) not null,
     trailerLength int(2),
     trailerURL varchar(150),
-    t_movieID int(5) not null,
+    m_movieID int(5) not null,
     constraint trailer_pk primary key (trailerID),
-    constraint trailer_fk_movie foreign key (t_movieID) references movie (movieID)
+    constraint trailer_fk_movie foreign key (m_movieID) references movie (movieID)
 )engine innodb;
 
 create table studio(
