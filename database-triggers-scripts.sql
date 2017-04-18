@@ -37,12 +37,3 @@ begin
 end$$
 delimiter ;
 
-
-
-#Views
--- Regular User: Movie, Actors, Trailer, Soundtrack + Songs, Genre
--- Somebody in the industry: Movie, Actors and their roles, Studio, 
--- Music lover 
-
-#Studio table
--- change studioaddress to studio country
