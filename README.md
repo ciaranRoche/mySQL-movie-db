@@ -4,6 +4,6 @@ The chosen area or topic for this project is movies. The aim of the project was 
 ### Description
 Movies are a form of entertainment to many people. Making a movie requires the collaborative effort of people with varied expertise. For example, producers are needed to plan and coordinate various aspects of a movie and the actors and actresses give life to the movie under direction of the director.
 Simply put, a movie and the movie industry contain much data which should be made available to anybody who seeks it. This is facilitated with the use of a database. By centralising data in an orderly manner, users may access it efficiently.
-The major functions of this database include the retrieval of information relevant to a movie such as the movie description, rating and runtime and other information which are attributed to a movie such as the soundtrack, songs of the soundtrack and artiste or band who played those songs. The people behind the movie are also included along with their respective roles such as actor, director and writer. All the tables in the database can be found in the Table Design section of this report.
+The major functions of this database include the retrieval of information relevant to a movie such as the movie description, rating and runtime and other information which are attributed to a movie such as the soundtrack, songs of the soundtrack and artiste or band who played those songs. The people behind the movie are also included along with their respective roles such as actor, director and writer. 
 ### ER Diagram
-![N|Solid](https://writelatex.s3.amazonaws.com/fhvwhqkcjpzw/uploads/397/11391315/1.pdf)
+![](er-diagram.png)
